@@ -45,7 +45,7 @@ function onError() {
     Swal.fire({
         position: 'center',
         icon: 'error',
-        title: 'Permiso denegado de geolocalizacion',
+        title: 'Permiso denegado de geolocalización',
         showConfirmButton: false,
         timer: 5000
     })
