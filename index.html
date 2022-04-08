@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>The Weather App</title>
+    <meta name="title" content="The Weather App">
+    <meta name="description" content="El tiempo, la aplicación de previsión metereológica pronostica el clima a diario y por hora. ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="The Weather App">
+    <meta property="og:description" content="El tiempo, la aplicación de previsión metereológica pronostica el clima a diario y por hora. ">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="The Weather App">
+    <meta property="twitter:description" content="El tiempo, la aplicación de previsión metereológica pronostica el clima a diario y por hora. ">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
     <!---------- Fontawesome ---------->
     <script src="https://kit.fontawesome.com/5577e771f0.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -20,48 +40,65 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/AppClima/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/AppClima/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>App Clima</title>
+
 </head>
 
 <body class="bg-weather" id="bg-weather">
+
+    <!-- NavBar -->
     <nav>
+        <!-- Logo -->
         <div class="search-form">
             <div class="search-brand text-center">
-                <!--<span class="navbar-brand"></span >-->
                 <img class="brand m-0" src="/AppClima/assets/images/satelite.png" />
             </div>
+            <!-- Logo -->
 
-
-
+            <!--Form -->
             <form id="form-search">
                 <div class="searchbox d-flex justify-content-center">
                     <input class="form-control shadow-none" autocomplete="off" type="search" placeholder="Buscar ciudad" aria-label="Search" id="search-input">
                 </div>
             </form>
+            <!-- Form -->
         </div>
     </nav>
+    <!-- NavBar -->
 
+    <!-- header -->
     <div class="weatherbox" id="weatherbox">
         <header>
             <i class="fa-solid fa-earth-americas"></i>The Weather App
         </header>
-        <div class="weather-part">
-            <img id="weather" alt="" height="200" width="200">
+        <!-- header -->
 
+        <!-- Container weather -->
+        <div class="weather-part">
+            <!-- imagen weather -->
+            <img id="weather" alt="" height="200" width="200">
+            <!-- imagen weather -->
+
+            <!-- part temperature -->
             <div class="temp">
                 <span class="number-temp" id="temp"></span>
                 <i class="fa-solid fa-temperature-empty" id="temp-icon"></i>
             </div>
+            <!-- part temperature -->
 
+            <!-- part description -->
             <div class="description" id="description"></div>
+            <!-- part description -->
 
+            <!-- part location -->
             <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
                 <span id="city"></span>
             </div>
+            <!-- part location -->
 
+            <!-- part container bottom -->
             <div class="bottom-details">
-
+                <!-- column ranger tamperature -->
                 <div class="column ranger-temp">
                     <i class="fa-solid fa-temperature-high"></i>
                     <div class="details">
@@ -73,7 +110,9 @@
                         <span>Mínima</span>
                     </div>
                 </div>
+                <!-- column ranger tamperature -->
 
+                <!-- column humidity -->
                 <div class="column humidity">
                     <i class="fa-solid fa-droplet"></i>
                     <div class="details">
@@ -81,11 +120,13 @@
                         <span>Humedad</span>
                     </div>
                 </div>
+                <!-- column humidity -->
             </div>
+            <!-- part container bottom -->
         </div>
     </div>
     </div>
-
+    <!-- Container weather -->
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-transparent text-muted fixed-bottom py-2">
