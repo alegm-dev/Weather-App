@@ -119,25 +119,25 @@ function weatherDetail(data) {
             case '03n':
             case '04d':
             case '04n':
-                weather.src = 'Assets/animated/cloudy.svg'
+                weather.src = 'assets/animated/cloudy.svg'
                 break;
             case '09d':
             case '09n':
-                weather.src = 'Assets/animated/rainy-5.svg'
+                weather.src = 'assets/animated/rainy-5.svg'
                 break;
             case '10d':
-                weather.src = 'Assets/animated/rainy-1.svg'
+                weather.src = 'assets/animated/rainy-1.svg'
                 break;
             case '10n':
-                weather.src = 'Assets/animated/rainy-6.svg'
+                weather.src = 'assets/animated/rainy-6.svg'
                 break;
             case '11d':
             case '11n':
-                weather.src = 'Assets/animated/thunder.svg'
+                weather.src = 'assets/animated/thunder.svg'
                 break;
             case '13d':
             case '13n':
-                weather.src = 'Assets/animated/snowy-6.svg'
+                weather.src = 'assets/animated/snowy-6.svg'
                 break;
             default:
                 weather.src = ''
