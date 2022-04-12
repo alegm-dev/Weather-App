@@ -112,40 +112,40 @@ function weatherDetail(data) {
 
         switch (data.weather[0].icon) {
             case '01d':
-                weather.src = 'Assets/animated/day.svg'
+                weather.src = 'assets/animated/day.svg'
                 break;
             case '01n':
-                weather.src = 'Assets/animated/night.svg'
+                weather.src = 'assets/animated/night.svg'
                 break;
             case '02d':
-                weather.src = 'Assets/animated/cloudy-day-1.svg'
+                weather.src = 'assets/animated/cloudy-day-1.svg'
                 break;
             case '02n':
-                weather.src = 'Assets/animated/cloudy-night-1.svg'
+                weather.src = 'assets/animated/cloudy-night-1.svg'
                 break;
             case '03d':
             case '03n':
             case '04d':
             case '04n':
-                weather.src = 'Assets/animated/cloudy.svg'
+                weather.src = 'assets/animated/cloudy.svg'
                 break;
             case '09d':
             case '09n':
-                weather.src = 'Assets/animated/rainy-5.svg'
+                weather.src = 'assets/animated/rainy-5.svg'
                 break;
             case '10d':
-                weather.src = 'Assets/animated/rainy-1.svg'
+                weather.src = 'assets/animated/rainy-1.svg'
                 break;
             case '10n':
-                weather.src = 'Assets/animated/rainy-6.svg'
+                weather.src = 'assets/animated/rainy-6.svg'
                 break;
             case '11d':
             case '11n':
-                weather.src = 'Assets/animated/thunder.svg'
+                weather.src = 'assets/animated/thunder.svg'
                 break;
             case '13d':
             case '13n':
-                weather.src = 'Assets/animated/snowy-6.svg'
+                weather.src = 'assets/animated/snowy-6.svg'
                 break;
             default:
                 weather.src = ''
