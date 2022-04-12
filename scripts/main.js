@@ -18,7 +18,7 @@ const rangerMax = document.getElementById('max');
 const rangerMin = document.getElementById('min');
 let $api;
 
-//Preloader
+//PRELOADER
 window.onload = () => {
     preload.style.display = 'none';
     preload.style.transition = '0.5s';
