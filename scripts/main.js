@@ -5,6 +5,7 @@ const api = {
 };
 
 //VARIABLES
+const preload = document.getElementById('preload');
 const weatherBox = document.getElementById('weatherbox');
 const searchForm = document.getElementById('form-search');
 const searchBox = document.getElementById('search-input');
@@ -16,6 +17,12 @@ const descrip = document.getElementById('description');
 const rangerMax = document.getElementById('max');
 const rangerMin = document.getElementById('min');
 let $api;
+
+//Preloader
+window.onload = () => {
+    preload.style.display = 'none';
+    preload.style.transition = '0.5s';
+}
 
 //Ubicacion del usuario
 window.addEventListener('load', () => {
@@ -65,16 +72,17 @@ async function fechData() {
         icon: 'info',
         title: `Obteniendo los resultados...`,
         showConfirmButton: false,
-        timer: 1500,
         timerProgressBar: true
     })
 
     fetch($api)
         .then(response => { return response.json() }) //datos de la url en formato JSON
         .then(data => {
+            Swal.close();
             weatherDetail(data);
         })
         .catch(error => { alertErr(); }) //si hay algun error se ejecuta el siguiente codigo
+
 };
 
 
@@ -87,7 +95,7 @@ function weatherDetail(data) {
             icon: 'error',
             title: `"${searchBox.value}" No es una ciudad valida`,
             showConfirmButton: false,
-            timer: 2000
+            timer: 1000
         })
         searchBox.value = "";
     } else {
@@ -159,7 +167,7 @@ function alertErr() {
         icon: 'error',
         title: 'Ingrese una ciudad',
         showConfirmButton: false,
-        timer: 2000
+        timer: 3000
     })
 };
 
